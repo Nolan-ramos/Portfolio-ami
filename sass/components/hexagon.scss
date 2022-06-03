@@ -1,0 +1,203 @@
+#hexagon_theme{
+    position:fixed;
+    z-index: 9999;
+    right:-40px;
+    top:50%;
+    transform:translateY(-50%) rotate(90deg);
+    transition: var(--trans);
+}
+
+.txt_hexagon{
+    position:fixed;
+    z-index: 9999;
+    top:50%;
+    transform:translateY(-50%) rotate(90deg);
+    right:-17.5px;
+    font-size: 14px;
+    transition:var(--trans);
+    color: #fff;
+    font-family: 'Montserrat', cursive;
+}
+
+/* tailles hexagon */
+.hexagon {
+    position: relative;
+    width: 75px;
+    height: 43.30px; 
+    transition:var(--trans);
+    &:before,
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 37.5px solid transparent;
+        border-right: 37.5px solid transparent;
+        transition:var(--trans);
+    }
+    &:before{
+        bottom: 100%;
+        border-bottom: 21.65px solid;
+    }
+    &:after{
+        top: 100%;
+        width: 0;
+        border-top: 21.65px solid;
+    }
+}
+.hexagon_big{
+    width: 450px; 
+    height: 259.81px;
+    margin:150px 0;
+    &:before,
+    &:after{
+        border-left: 225px solid transparent;
+        border-right: 225px solid transparent;
+    }
+    &:before{
+        border-bottom: 129.90px solid;
+    }
+    &:after{
+        border-top: 129.90px solid;
+    }
+}
+
+/* speciaux hecagon */
+.icon_in_hexagon{
+    i{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 2.5em;
+        color:white;
+        line-height: 1;
+    }
+    
+}
+
+.hexagon_theme{
+    background: var(--normal_color);
+    &:before{
+        border-bottom-color: var(--normal_color);
+    }
+    &:after{
+        border-top-color: var(--normal_color);
+    }
+}
+
+.hexagon_close_theme{
+    width: 50px; 
+    height: 28.87px;
+    margin: 14.43px 0;
+    background: var(--normal_color);
+    &:before,
+    &:after{
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    &:before{ 
+        border-bottom: 14.43px solid var(--normal_color);
+    }
+    &:after{
+        border-top: 14.43px solid var(--normal_color);
+    }
+}
+
+.hexagon_header{
+    background: var(--normal_color);
+    &:before{
+        border-bottom-color: var(--normal_color);
+    }
+    &:after{
+        border-top-color: var(--normal_color);
+    }
+}
+.txt_hexagon_header{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index: 1;
+    transform:translateY(-50%) translateX(-50%);
+    font-family: 'Miss Fajardose', cursive;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+}
+
+.hexagon_nav{
+    width: 50px; 
+    height: 28.87px;
+    margin: 14.43px 0;
+    background: var(--normal_color);
+    &:before,
+    &:after{
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    &:before{ 
+        border-bottom: 14.43px solid var(--normal_color);
+    }
+    &:after{
+        border-top: 14.43px solid var(--normal_color);
+    }
+}
+
+.hexagon_projet{
+    width: 50px; 
+    height: 28.87px;
+    margin: 14.43px 0;
+    background: var(--dark);
+    &:before,
+    &:after{
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    &:before{ 
+        border-bottom: 14.43px solid var(--dark);
+    }
+    &:after{
+        border-top: 14.43px solid var(--dark);
+    }
+    i{
+        transition: var(--trans);
+        color: var(--white);
+    }
+    &:hover{
+        background: var(--normal_color);
+        &:before{ 
+            border-bottom: 14.43px solid var(--normal_color);
+        }
+        &:after{
+            border-top: 14.43px solid var(--normal_color);
+        }
+        i{
+            color:#fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hexagon_big{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translateY(-50%) translateX(-50%);
+        width: 200px; 
+        height: 115.47px;
+        margin: 0 0 57.74px 0 ;
+        &:before,
+        &:after{
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+        }
+        &:before{
+            border-bottom: 57.74px solid var(--normal_color);
+        }
+        &:after{
+            border-top: 57.74px solid var(--normal_color);
+        }
+    }
+}
+
+
+

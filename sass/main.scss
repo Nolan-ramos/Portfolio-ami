@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./base/reseet";
+@import "./base/all";
+
+@import "./layouts/loader";
+@import "./layouts/nav";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/apropos";
+@import "./pages/competences";
+@import "./pages/contact";
+@import "./pages/projets";
+
+@import "./components/hexagon";
+
+@import "./themes/theme";
+
+
+

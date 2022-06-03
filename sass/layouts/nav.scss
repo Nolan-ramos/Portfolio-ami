@@ -1,0 +1,42 @@
+@media only screen and (min-width: 992px) {
+    .button_nav{
+        display: none;
+    }
+    .modal_nav{
+        display: none;
+    }
+}
+
+.button_nav{
+    position:fixed;
+    top:25px;
+    right:25px;
+    color:black;
+    z-index: 9980;
+    cursor: pointer;
+    transition: var(--trans);
+}
+
+.modal_nav{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right:-280px;
+    z-index: 9979;
+    width:280px;
+    height:100vh;
+    background: var(--light);
+    transition: var(--trans);
+    box-shadow: 4px 0 12px rgb(0,0,0,0.3);
+    overflow: auto;
+    ul{
+        margin-top: 100px;
+    }
+    a{
+        display: inline-block;
+        padding:30px 50px;
+        color: var(--normal_color);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

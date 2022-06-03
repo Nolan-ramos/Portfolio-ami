@@ -1,0 +1,84 @@
+.theme{
+    cursor: pointer;
+    display: block;
+}
+
+.modal_theme{
+    position:fixed;
+    top:0;
+    right:-280px;
+    z-index: 9990;
+    width:280px;
+    height:100vh;
+    background: var(--light);
+    color: var(--black);
+    transition: var(--trans);
+    box-shadow: 4px 0 12px rgb(0,0,0,0.3);
+}
+
+.choix_theme{
+    padding:3.5em 1em 3.5em 4em;
+    height:100%;
+    overflow: auto;
+    .liste_nom_theme{
+        margin: 0 0 30px 0px;
+    }
+    .nom_theme{
+        font-weight: 700;
+        margin: 0 0 10px 0;
+    }
+    li{
+        margin-bottom: 10px;
+        span:first-child{
+            display: block;
+        }
+        input{
+            margin-top: 5px;
+            position:relative;
+            border:solid var(--dark);
+            height:35px;
+            width:70px;
+            border-radius:20px;
+            transition: var(--trans);
+            cursor: pointer;
+            &::after{
+                content: '';
+                position:absolute;
+                top:50%;
+                left:6px;
+                transform: translateY(-50%);
+                height:20px;
+                width:20px;
+                border-radius:50%;
+                border: solid  transparent;
+                background: var(--dark);
+                transition: var(--trans);
+                border: solid var(--light);
+            }
+            &:checked{
+                background: var(--dark);
+                &::after{
+                    left:37.5px;
+                    background: var(--normal_color);
+                    border: solid var(--dark);
+                }
+            }
+        }
+    }
+}
+.choix_theme::-webkit-scrollbar {
+    width:0px;
+}
+
+.close_modal_theme_mobile{
+    position: absolute;
+    top:15px;
+    right:15px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+    .close_modal_theme_mobile{
+        display: none;
+    }
+}

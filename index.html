@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-16">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+        <link rel="stylesheet" href="css/prefix/styles.css">    
+        <title>Portfolio</title>
+    </head>
+    <body id="body" class="body"> 
+        <main>
+            <header>
+                <div class="bg_header">
+                    <nav class="nav_header revealerdeux">
+                        <ul class="revealmedeux">
+                            <li><a href="#apropos">à propos</a></li>
+                            <li><a href="#projets">projets</a></li>
+                            <li><a href="#competences">compétences</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="hexagon_center revealer">
+                        <div class="hexagon hexagon_big hexagon_header revealme">
+                            <div class="txt_hexagon_header revealme">
+                                <h1>
+                                    Théo
+                                    <br>
+                                    Payen
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_top_header revealer">
+                        <p class="revealme">étudiant à ESGI, École Supérieure de Génie Informatique</p>
+                    </div>
+                </div>
+            </header>
+            <!-- nav -->
+            <div class="loader">
+                <div class='ball'></div>
+                <div class='shape'></div>
+            </div>
+            <div class="button_nav" id="button_nav">
+                <div id="hexagon_nav" class="hexagon hexagon_nav icon_in_hexagon">
+                    <i id="icon_nav" class="uil uil-align-center-alt"></i>
+                </div>
+            </div>
+            <div class="modal_nav scrollablenav" id="modal_nav">
+                <nav>
+                    <ul>
+                        <li><a class="lien_nav" href="#apropos">à propos</a></li>
+                        <li><a class="lien_nav" href="#projets">projets</a></li>
+                        <li><a class="lien_nav" href="#competences">compétences</a></li>
+                        <li><a class="lien_nav" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Thèmes -->
+            <div id="theme" class="theme">
+                <div id="hexagon_theme" class="hexagon_theme hexagon"></div>
+                <div id="txt_hexagon" class="txt_hexagon"><span>thèmes</span></div>
+            </div>
+            <div id="modal_theme" class="modal_theme">
+                <div class="choix_theme scrollable">
+                    <!-- Couleurs -->
+                    <div class="close_modal_theme_mobile" id="close_modal_theme_mobile">
+                        <div class="icon_in_hexagon hexagon hexagon_close_theme"><i class="uil uil-times"></i></div>
+                    </div>
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Couleurs</li>
+                        <li>
+                            <span>Beige</span>
+                            <span id="fonction_beige">
+                                <input type="radio" id="beige" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Marron</span>
+                            <span id="fonction_marron">
+                                <input type="radio" id="marron" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Rouge</span>
+                            <span id="fonction_rouge">
+                                <input type="radio" id="rouge" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Orange</span>
+                            <span id="fonction_orange">
+                                <input type="radio" id="orange" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Jaune</span>
+                            <span id="fonction_jaune">
+                                <input type="radio" id="jaune" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Vert</span>
+                            <span id="fonction_vert">
+                                <input type="radio" id="vert" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Bleu</span>
+                            <span id="fonction_bleu">
+                                <input type="radio" id="bleu" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Violet</span>
+                            <span id="fonction_violet">
+                                <input type="radio" id="violet" name="couleur" value="" checked>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Rose</span>
+                            <span id="fonction_rose">
+                                <input type="radio" id="rose" name="couleur" value="">
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- Thèmes -->
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Thèmes</li>
+                        <li>
+                            <span>Sombre</span>
+                            <span id="fonction_sombre">
+                                <input type="radio" id="sombre" name="theme" value="">
+                            </span>
+                        </li>
+                        <!--
+                        <li>
+                            <div class="nom_theme_precis">Sombre coloré</div>
+                            <div class="hexagon hexagon_little hexagon_couleur hexagon_bleu"></div>
+                        </li>
+                        -->
+                        <li>
+                            <span>Clair</span>
+                            <span id="fonction_clair">
+                                <input type="radio" id="clair" name="theme" value="">
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- Polices d'écritures -->
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Polices d'écriture</li>
+                        <li>
+                            <span style="font-family: 'Montserrat'">Montserrat</span>
+                            <span id="fonction_montserrat">
+                                <input type="radio" id="montserrat" name="police" value="" checked>
+                            </span>
+                        </li>
+                        <li>
+                            <span style="font-family: 'Lato'">Lato</span>
+                            <span id="fonction_lato">
+                                <input type="radio" id="lato" name="police" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span style="font-family: 'Roboto'">Roboto</span>
+                            <span id="fonction_roboto">
+                                <input type="radio" id="roboto" name="police" value="">
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- Pays -->
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Pays</li>
+                        <li>
+                            <span>France</span>
+                            <span id="fonction_france">
+                                <input type="radio" id="france" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Allemagne</span>
+                            <span id="fonction_allemagne">
+                                <input type="radio" id="allemagne" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Espagne</span>
+                            <span id="fonction_espagne">
+                                <input type="radio" id="espagne" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Portugal</span>
+                            <span id="fonction_portugal">
+                                <input type="radio" id="portugal" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Italie</span>
+                            <span id="fonction_italie">
+                                <input type="radio" id="italie" name="couleur" value="">
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- Saisons -->
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Saisons</li>
+                        <li>
+                            <span>Printemps</span>
+                            <span id="fonction_printemps">
+                                <input type="radio" id="printemps" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Été</span>
+                            <span id="fonction_ete">
+                                <input type="radio" id="ete" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Automne</span>
+                            <span id="fonction_automne">
+                                <input type="radio" id="automne" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Hiver</span>
+                            <span id="fonction_hiver">
+                                <input type="radio" id="hiver" name="couleur" value="">
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- Marques -->
+                    <ul class="liste_nom_theme">
+                        <li class="nom_theme">Marques</li>
+                        <li>
+                            <span>Tiktok</span>
+                            <span id="fonction_tiktok">
+                                <input type="radio" id="tiktok" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Macdo</span>
+                            <span id="fonction_macdo">
+                                <input type="radio" id="macdo" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Redbull</span>
+                            <span id="fonction_redbull">
+                                <input type="radio" id="redbull" name="couleur" value="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>Burger King</span>
+                            <span id="fonction_burgerking">
+                                <input type="radio" id="burgerking" name="couleur" value="">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- A propos -->
+            <section id="apropos">
+                <div class="article_flex">
+                    <article class="title_article title_article_color">
+                        <div class="article_sticky">
+                            <div class="photo">
+                                <img src="img/kyt.png" alt="">
+                            </div>                     
+                            <div class="title_nav">
+                                <h2 class="title title_color">À propos</h2>
+                            </div>
+                            <nav class="nav_article nav_article_color">
+                                <ul>
+                                    <li><a class="active" href="#apropos">à propos</a></li>
+                                    <li><a href="#projets">projets</a></li>
+                                    <li><a href="#competences">compétences</a></li>
+                                    <li><a href="#contact">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </article>
+                    <article class="content_article article_apropos">
+                        <div class="texte_apropos">
+                            <div class="photo_mobile revealer">
+                                <img class="revealme" src="img/kyt.png" alt="">
+                            </div>
+                            <div class="revealer">
+                                <h6 class="revealme" style="margin-top: 0;">À propos de moi</h6>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">
+                                    Diplômé d'un baccalauréat SN, je suis actuellement étudiant en deuxième année de BTS SIO SISR
+                                    (Services Informatiques aux Organisations, solutions d'infrastructure, systèmes et réseaux) au centre de formation UTEC 
+                                    d’Avon et en alternance à la Caisse d'Allocations Familiales de Seine-et-Marne.
+                                </p>
+                            </div>
+                            <div class="revealer">
+                                <h6 class="revealme">Mon école</h6>
+                            </div>
+                            <div class="revealer">
+                                <span class="revealme">CFA UTEC D’AVON-FONTAINEBLEAU</span>
+                                <div class="under_titre revealme"></div>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">
+                                    L'UTEC forme des jeunes en apprentissage, du CAP au Bac+5, en soit 46 diplômes pour plus de 100 métiers différents.
+                                    Cette école s’adresse :
+                                </p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="revealer">
+                                        <p class="revealme">
+                                            - Aux jeunes de 16 à 30 ans, selon leur âge et leur niveau, afin d'accèder à des formations de qualité, gratuites 
+                                            et rémunérées, validées par un diplôme de l'enseignement professionnel, leur facilitant l'entrée dans la vie active.
+                                        </p>
+                                    </li>
+                                    <li class="revealer">
+                                        <p class="revealme">
+                                            - A des salariés ou demandeurs d’emplois pour des formations continues réglementées ou obligatoires, certifiantes, 
+                                            linguistiques ou encore sur mesure.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">
+                                    L’UTEC Formation Continue est à l’écoute des besoins exprimés par les entreprises et 
+                                    les institutionnels du territoire de Seine-et-Marne, ce qui lui permet d’apprécier 
+                                    l’évolution des métiers représentatifs du département et de répondre au mieux à leurs attentes en matière de formation.
+                                </p>
+                            </div>
+                            <div class="revealer">
+                                <h6 class="revealme">Mon entreprise</h6>
+                            </div>
+                            <div class="revealer">
+                                <span class="revealme">CAISSE D'ALLOCATIONS FAMILIALES (CAF)</span>
+                                <div class="under_titre revealme"></div>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">Une Caisse d'allocations familiales est un organisme de droit privé, à compétence départementale.
+                                    Elle verse :
+                                </p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="revealer">
+                                        <p class="revealme">
+                                            - Aux particuliers : des prestations financières à caractère familial ou social 
+                                            (prestations légales), dans des conditions déterminées par la loi.
+                                        </p>
+                                    </li>
+                                    <li class="revealer">
+                                        <p class="revealme">
+                                            - Aux acteurs locaux (collectivités locales et associations) : des prestations dites extra-légales dans le cadre 
+                                            de sa politique d'action sociale pour
+                                            les inciter et les accompagner à développer des services adaptés aux besoins des familles 
+                                            (crèches, centres de loisirs, actions de soutien à la parentalité, animation de la vie sociale...).
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">
+                                    Je suis actuellement salarié en contrat d'apprentissage de 2 ans à la CAF de Seine-et-Marne basée 
+                                    à Melun, avec comme tuteur M GAUDIN, responsable du service EM2I (Pôle étude, maintenance, installations et innovations) : 
+                                    ce service gère toute la partie maintenance des différents matériels du parc informatique comme les ordinateurs, les téléphones VOIP et des Imprimantes.
+                                </p>
+                            </div>
+                            <div class="revealer">
+                                <p class="revealme">
+                                    Mes tâches principales sont l'installation de poste de travail, l'automatisation de certaines tâches via des scripts 
+                                    et la gestion des incidents utilisateurs variés.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Projets -->
+            <section id="projets">
+                <div class="article_flex">
+                    <article class="title_article">
+                        <div class="article_sticky">
+                            <div class="title_nav">
+                                <h2 class="title">Projets</h2>
+                                <nav class="nav">
+                                    <a href="#projet1" onclick="open_slide_projet(), currentSlide(1)">PowerShell</a>
+                                    <a href="#projet2" onclick="open_slide_projet(), currentSlide(2)">CyberSécurité</a>
+                                    <a href="#projet3" onclick="open_slide_projet(), currentSlide(3)">Web</a>
+                                </nav>
+                            </div>
+                            <nav class="nav_article">
+                                <ul>
+                                    <li><a href="#apropos">à propos</a></li>
+                                    <li><a class="active" href="#projets">projets</a></li>
+                                    <li><a href="#competences">compétences</a></li>
+                                    <li><a href="#contact">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </article>
+                    <article class="content_article article_projets">
+                        <!-- Projet 1 -->
+                        <div class="pres_projet revealer " id="projet1" onclick="open_slide_projet(), currentSlide(1)" data-spy>
+                            <div class="img_txt_projet">
+                                <img class="revealme" src="img/b2.png" alt="">
+                                <div class="txt_projet revealme">
+                                    <span>powershell</span>
+                                    <p>script automatisation</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Projet 2 -->
+                        <div class="pres_projet revealer " id="projet2" onclick="open_slide_projet(), currentSlide(2)" data-spy>
+                            <div class="img_txt_projet">
+                                <img class="revealme" src="img/b3.jpg" alt="">
+                                <div class="txt_projet revealme">
+                                    <span>powershell</span>
+                                    <p>script automatisation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Projet 3 -->
+                        <div class="pres_projet revealer " id="projet3" onclick="open_slide_projet(), currentSlide(3)" data-spy>
+                            <div class="img_txt_projet">
+                                <img class="revealme" src="img/b4.jpg" alt="">
+                                <div class="txt_projet revealme">
+                                    <span>powershell</span>
+                                    <p>script automatisation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <article class="slide_projet" id="slide_projet">
+                    <div class="container_slide_projet">
+                        <div class="hexagon hexagon_projet icon_in_hexagon close_slide_projet" onclick="close_slide_projet()"><i class="uil uil-times"></i></div>
+                        <div class="mySlides fade">
+                            <div class="detail_projet">
+                                <div class="detail_projet_titre">powershell</div>
+                                <div class="detail_projet_images">
+                                    <div class="image">
+                                        <img src="img/b2.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/b3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="taches_infos_projet">
+                                    <div class="taches_detail_projet">
+                                        <div class="titre_info_tache">tâches effectuées</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li>Développement intellectuelle</li>
+                                            <li>Automatisation de chèvre</li>
+                                            <li>Intégration de maquettage de pinnochio</li>
+                                            <li>Réalisation du design présidentielle</li>
+                                            <li>J'ai plus d'idée mais bon ca fait du texte en plus faut ca retourne a la ligne pour les teste lololol</li>
+                                        </ul>
+                                    </div>
+                                    <div class="infos_detail_projet">
+                                        <div class="titre_info_tache">infos projet</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li><i class="uil uil-calendar-alt"></i> Année : 2021</li>
+                                            <li><i class="uil uil-layer-group"></i> Catégorie : Scripting</li>
+                                        </ul>
+                                        <div class="barre"></div>
+                                        <div class="techno_utilise">
+                                            <span class="techno">PHP</span>
+                                            <span class="techno">CSS</span>
+                                            <span class="techno">HTML</span>
+                                            <span class="techno">LINUX</span>
+                                            <span class="techno">SASS</span>
+                                            <span class="techno">JS</span>
+                                            <span class="techno">JQUERY</span>
+                                        </div>
+                                        <div class="barre"></div>
+                                        <div class="lien_detail_projet">
+                                            <a href="">Voir le github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="detail_projet">
+                                <div class="detail_projet_titre">powershell</div>
+                                <div class="detail_projet_images">
+                                    <div class="image">
+                                        <img src="img/b3.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/b4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="taches_infos_projet">
+                                    <div class="taches_detail_projet">
+                                        <div class="titre_info_tache">tâches effectuées</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li>Développement intellectuelle</li>
+                                            <li>Automatisation de chèvre</li>
+                                            <li>Intégration de maquettage de pinnochio</li>
+                                            <li>Réalisation du design présidentielle</li>
+                                            <li>J'ai plus d'idée mais bon ca fait du texte en plus faut ca retourne a la ligne pour les teste lololol</li>
+                                        </ul>
+                                    </div>
+                                    <div class="infos_detail_projet">
+                                        <div class="titre_info_tache">infos projet</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li><i class="uil uil-calendar-alt"></i> Année : 2021</li>
+                                            <li><i class="uil uil-layer-group"></i> Catégorie : Scripting</li>
+                                        </ul>
+                                        <div class="barre"></div>
+                                        <div class="techno_utilise">
+                                            <span class="techno">PHP</span>
+                                            <span class="techno">CSS</span>
+                                            <span class="techno">HTML</span>
+                                            <span class="techno">LINUX</span>
+                                            <span class="techno">SASS</span>
+                                            <span class="techno">JS</span>
+                                            <span class="techno">JQUERY</span>
+                                        </div>
+                                        <div class="barre"></div>
+                                        <div class="lien_detail_projet">
+                                            <a href="">Voir le github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="detail_projet">
+                                <div class="detail_projet_titre">powershell</div>
+                                <div class="detail_projet_images">
+                                    <div class="image">
+                                        <img src="img/b2.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/b4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="taches_infos_projet">
+                                    <div class="taches_detail_projet">
+                                        <div class="titre_info_tache">tâches effectuées</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li>Développement intellectuelle</li>
+                                            <li>Automatisation de chèvre</li>
+                                            <li>Intégration de maquettage de pinnochio</li>
+                                            <li>Réalisation du design présidentielle</li>
+                                            <li>J'ai plus d'idée mais bon ca fait du texte en plus faut ca retourne a la ligne pour les teste lololol</li>
+                                        </ul>
+                                    </div>
+                                    <div class="infos_detail_projet">
+                                        <div class="titre_info_tache">infos projet</div>
+                                        <div class="barre"></div>
+                                        <ul>
+                                            <li><i class="uil uil-calendar-alt"></i> Année : 2021</li>
+                                            <li><i class="uil uil-layer-group"></i> Catégorie : Scripting</li>
+                                        </ul>
+                                        <div class="barre"></div>
+                                        <div class="techno_utilise">
+                                            <span class="techno">PHP</span>
+                                            <span class="techno">CSS</span>
+                                            <span class="techno">HTML</span>
+                                            <span class="techno">LINUX</span>
+                                            <span class="techno">SASS</span>
+                                            <span class="techno">JS</span>
+                                            <span class="techno">JQUERY</span>
+                                        </div>
+                                        <div class="barre"></div>
+                                        <div class="lien_detail_projet">
+                                            <a href="">Voir le github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hexagon hexagon_projet icon_in_hexagon prev" onclick="plusSlides(-1)"><i class="uil uil-angle-left"></i></div>
+                        <div class="hexagon hexagon_projet icon_in_hexagon next" onclick="plusSlides(1)"><i class="uil uil-angle-right"></i></div>
+                    </div>
+                </article>
+            </section>
+            <!-- Compétences -->
+            <section id="competences">
+                <div class="article_flex">
+                    <article class="title_article title_article_color">
+                        <div class="article_sticky">
+                            <div class="title_nav">
+                                <h2 class="title title_color">Compétences</h2>
+                                <!--    
+                                <nav class="nav nav_color">
+                                    <a href="#">1.CSS</a>
+                                    <a href="#">2.HTML</a>
+                                    <a href="#">3.JavaScript</a>
+                                    <a href="#">4.PHP</a>
+                                </nav>
+                                -->
+                            </div>
+                            <nav class="nav_article nav_article_color">
+                                <ul>
+                                    <li><a href="#apropos">à propos</a></li>
+                                    <li><a href="#projets">projets</a></li>
+                                    <li><a class="active" href="#competences">compétences</a></li>
+                                    <li><a href="#contact">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </article>
+                    <article class="content_article article_competences">
+                        <div class="categorie_competences">
+                            <div class="categorie_competences_pres">
+                                <div class="categorie_competences_pres_icons">
+                                    <div class="revealer">
+                                        <i class="uil uil-cloud-computing revealme"></i>
+                                    </div>
+                                    <div class="revealer">
+                                        <span class="revealme">Cloud</span>
+                                    </div>
+                                    <div class="revealer">
+                                        <p class="revealme">
+                                            Le cloud computing, en français l'informatique en nuage, correspond à l’accès à des services informatiques via Internet 
+                                            à partir d’un fournisseur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categorie_competences_pres">
+                                <div class="categorie_competences_pres_icons">
+                                    <div class="revealer">
+                                        <i class="uil uil-keyhole-circle revealme"></i>
+                                    </div>
+                                    <div class="revealer">
+                                        <span class="revealme">Cyber Sécurité</span>
+                                    </div>
+                                    <div class="revealer">
+                                        <p class="revealme">
+                                            Ensemble des moyens utilisés pour assurer la sécurité des systèmes et des données informatiques d'un État, d'une entreprise, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categorie_competences">
+                            <div class="categorie_competences_pres">
+                                <div class="categorie_competences_pres_icons">
+                                    <div class="revealer">
+                                        <i class="uil uil-server revealme"></i>
+                                    </div>
+                                    <div class="revealer">
+                                        <span class="revealme">Réseaux</span>
+                                    </div>
+                                    <div class="revealer">
+                                        <p class="revealme">
+                                            Un réseau informatique (en anglais, data communication network ou DCN) est un ensemble d'équipements reliés entre eux pour échanger des informations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categorie_competences_pres">
+                                <div class="categorie_competences_pres_icons">
+                                    <div class="revealer">
+                                        <i class="uil uil-brackets-curly revealme"></i>
+                                    </div>
+                                    <div class="revealer">
+                                        <span class="revealme">Developpement</span>
+                                    </div>
+                                    <div class="revealer">
+                                        <p class="revealme">
+                                            Le développement informatique concerne tout ce qui touche à l'étude, à la conception, à la construction, au 
+                                            développement, à la mise au point, à la maintenance et à l'amélioration des logiciels et autres applications et sites web.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>linux</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:70%;">
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>PowerShell</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:60%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>Python</span>
+                                    <span>40%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:40%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>HTML/CSS</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:50%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>Windows</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:80%;">
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>Langage C</span>
+                                    <span>40%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:40%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme">
+                                <div class="name_pourcent">
+                                    <span>Base de données</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:50%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revealer">
+                            <div class="progress_bar_competence revealme" style="margin-bottom: 0;">
+                                <div class="name_pourcent">
+                                    <span>Github</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_bar_pourcent" style="width:30%;"> 
+                                        <div class="progress_bar_pourcent_rempli"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section id="contact">
+                <div class="article_flex">
+                    <article class="title_article">
+                        <div class="article_sticky">
+                            <div class="title_nav">
+                                <h2 class="title">Contact</h2>
+                            </div>
+                            <nav class="nav_article">
+                                <ul>
+                                    <li><a href="#apropos">à propos</a></li>
+                                    <li><a href="#projets">projets</a></li>
+                                    <li><a href="#competences">compétences</a></li>
+                                    <li><a class="active" href="#contact">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </article>
+                    <article class="content_article article_contact">
+                        <!-- <div id="map"></div> -->
+                        <div class="coordonnees_contact">
+                            <div class="revealer">
+                                <h5 class="revealme">Théo Payen</h5>
+                            </div>
+                            <div class="revealer">
+                                <span class="revealme">Étudiant à ESGI École Supérieure de Génie Informatique</span>
+                            </div>
+                            <div class="revealer">
+                                <a class="revealme" href="mailto:theo@theo-payen.fr" style="text-transform: lowercase;">theo@theo-payen.fr</a>
+                            </div>
+                        </div>
+                        <div class="reseaux_contact">
+                            <a class="revealer" href="#"><i class="uil uil-twitter revealme"></i></a>
+                            <a class="revealer" href="#"><i class="uil uil-facebook-f revealme"></i></a>
+                            <a class="revealer" href="#"><i class="uil uil-instagram revealme"></i></a>
+                            <a class="revealer" href="#"><i class="uil uil-github-alt revealme"></i></a>
+                            <a class="revealer" href="#"><i class="uil uil-linkedin-alt revealme"></i></a>
+                        </div>
+                        <form action="">
+                            <div class="deux_champ_form revealer">
+                                <div class="champ_form revealme">                                   
+                                    <input type="text" placeholder="Prénom" autocomplete="off" value="" onkeyup="this.setAttribute('value', this.value);" required>
+                                    <div class="trait_champ"></div>
+                                </div>
+                                <div class="champ_form revealme">                                   
+                                    <input type="text" placeholder="Nom" autocomplete="off" value="" onkeyup="this.setAttribute('value', this.value);" required>
+                                    <div class="trait_champ"></div>
+                                </div>
+                            </div>
+                            <div class="deux_champ_form revealer">
+                                <div class="champ_form revealme">                                    
+                                    <input type="email" placeholder="E-mail" autocomplete="off" value="" onkeyup="this.setAttribute('value', this.value);" required>
+                                    <div class="trait_champ"></div>
+                                </div>
+                                <div class="champ_form revealme">
+                                    <input type="tel" pattern="[0-9]{10}" placeholder="Téléphone" autocomplete="off" value="" onkeyup="this.setAttribute('value', this.value);" required>
+                                    <div class="trait_champ"></div>
+                                </div>
+                            </div>  
+                            <div class="revealer">
+                                <div class="champ_form revealme">
+                                    <input type="text" placeholder="Objet" autocomplete="off" value="" onkeyup="this.setAttribute('value', this.value);" required>
+                                    <div class="trait_champ"></div>
+                                </div>  
+                            </div>  
+                            <div class="revealer">
+                                <div class="champ_form textarea revealme">
+                                    <textarea id="textarea" name="" id="" cols="" rows="7" placeholder="Votre message" required></textarea>
+                                </div> 
+                            </div>    
+                            <div class="revealer">
+                                <div class="champ_form envoie_form revealme">
+                                    <button type="submit">Envoyer</button>
+                                    <div class="trait_champ"></div>
+                                </div> 
+                            </div>                                                 
+                        </form>
+                    </article>
+                </div>
+            </section>
+            <footer>
+                <div class="bg_footer">
+                    <div class="text_top_footer revealer">
+                        <p class="revealme">À bientot !</p>
+                    </div>
+                    <div class="menus_footer revealer">
+                        <nav class="nav_footer revealme">
+                            <ul>
+                                <li></li>
+                                <li><a href="#apropos">à propos</a></li>
+                                <li><a href="#projets">projets</a></li>
+                                <li><a href="#competences">compétences</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="nav_footer revealme">
+                            <ul>
+                                <li></li>
+                                <li><a href="https://www.facebook.com/theo.payen.33/" rel="noopener" target="_blank">facebook</a></li>
+                                <li><a href="https://twitter.com/ThKyt" rel="noopener" target="_blank">Twitter</a></li>
+                                <li><a href="https://www.instagram.com/thpayen/" rel="noopener" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.instagram.com/thpayen/" rel="noopener" target="_blank">Linkedin</a></li>
+                                <li><a href="#" rel="noopener" target="_blank">Github</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="nav_footer revealme">
+                            <ul>
+                                <li></li>
+                                <li><a href="https://goo.gl/maps/1jbM195ngbpWT9EK9" target="_blank">melun</a></li>
+                                <li><a href="mailto:theo@theo-payen.fr" style="text-transform: lowercase;">theo@theo-payen.fr</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mentions revealerdeux">
+                        <span class="revealmedeux">Copyright © 2021 | Tous droits réservés | developped by nolan ramos |
+                            <a href="#">Mentions légales</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/scrollpsy.js"></script>
+    <script type="text/javascript" src="js/projets.js"></script>
+    <script type="text/javascript" src="js/reveal.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+</html>

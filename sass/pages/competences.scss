@@ -1,0 +1,109 @@
+.article_competences{
+    background: var(--light);
+    color: var(--black);
+    padding:6em;
+}
+
+.categorie_competences{
+    display: flex;
+    flex-direction: row;
+    &_pres{
+        width:50%;
+        margin-bottom: 50px;
+        &:first-child{
+            margin-right: 50px;
+        }
+    }
+    &_pres_icons{
+        i{
+            color:var(--normal_color);
+            font-size:96px;
+            transition:var(--trans);
+            margin-left: -26.5px;
+        }
+        span{
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 14px;
+            font-weight: 700;
+            display: block;
+            margin: 0 0 20px 0;
+            color: var(--normal_color);
+        }
+        p{
+            transition: opacity var(--trans);
+        }
+    }
+}
+
+.active .revealme .progress_bar .progress_bar_pourcent_rempli{
+    width:100%;
+}
+
+.progress_bar_competence{
+    margin-bottom: 50px;
+    transition: opacity var(--trans);
+    .name_pourcent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span{
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 14px;
+            font-weight: 700;
+            
+        }
+    }
+    .progress_bar{
+        position: relative;
+        margin-top: 1.5em;
+        height:1px;
+        background:#5a5a5a;
+        &_pourcent{
+            position: absolute;
+            left:0;
+            top:-2.5px;
+            height:6px;
+            &_rempli{
+                width:0%;
+                height:100%;
+                background: var(--normal_color);
+                transition: ease-in-out 1s;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .categorie_competences{
+        flex-direction: column;
+        &_pres{
+            width:100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .categorie_competences{
+        flex-direction: row;
+        &_pres{
+            width:50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .categorie_competences{
+        flex-direction: column;
+        &_pres{
+            width:100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .article_competences{
+        padding:3em;
+    }
+}

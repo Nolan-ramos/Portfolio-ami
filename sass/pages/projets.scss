@@ -1,0 +1,281 @@
+.article_projets{
+    background: var(--light);
+}
+
+.pres_projet{
+    position: relative;
+    background: var(--light);
+    width:100%;
+    height:100vh;
+    .img_txt_projet{
+        width:100%;
+        cursor: pointer;
+        overflow: hidden;
+        img{
+            width:100%;
+            height:100vh;
+            object-fit: cover;
+        }
+        .txt_projet{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translateY(-50%) translateX(-50%);
+            color:white;
+            text-transform: uppercase;
+            text-align: center;
+            span{
+                font-weight: 700;
+                font-size: 1.35em;
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(1.02, 1.02);
+            }
+        }
+    }
+}
+
+.slide_projet{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:-100%;
+    z-index: 9999;
+    width:50%;
+    height:100vh;
+    background: var(--light);
+    transition: 0.8s ease-in-out;
+}
+
+.container_slide_projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+    height:100%;
+    width:100%;
+    .mySlides {
+        display: none;
+        height:100%;
+        width:100%;
+    }
+    .fade{
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    .close_slide_projet,
+    .prev,
+    .next{
+        position: absolute;
+        cursor: pointer;
+    }
+    .close_slide_projet{
+        top:25px;
+        right:25px;
+    }
+    .prev{
+        bottom:25px;
+        left:25px;
+    }
+    .next{
+        bottom:25px;
+        right:25px;
+    }
+}
+
+.detail_projet{
+    color: var(--black);
+    overflow: auto;
+    width:100%;
+    height:100%;
+    padding-bottom: 200px;
+    &_titre{
+        margin: 39.43px 100px 39.43px 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        font-weight: 700;
+        line-height: 1;
+    }
+    &_images{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        margin-bottom: 50px;
+        .image{
+            width:45%;
+            &:first-child{
+                margin: 0 25px 0 25px;
+            }
+            &:last-child{
+                margin: 0;
+            }
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+    .taches_infos_projet{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+    }
+    .taches_detail_projet{
+        width:45%;
+        margin: 0 25px 0 25px;
+        ul li{
+            margin:5px 0;
+            list-style: inside;
+        }
+    }
+    .infos_detail_projet{
+        width:45%;
+        margin: 0;
+        ul li{
+            margin:5px 0;
+            i{
+                color:var(--normal_color);
+            }
+        }
+        .techno_utilise{
+            margin-top: 15px;
+            .techno{
+                display:inline-block;
+                padding:10px 20px;
+                background: var(--normal_color);
+                color:#fff;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+        } 
+        .lien_detail_projet{
+            margin-top: 20px;
+            a{
+                padding:10px 20px;
+                border: 1px solid var(--black);
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color:var(--black);
+                transition: var(--trans);
+                &:hover{
+                    border: 1px solid var(--normal_color);
+                    background: var(--normal_color);
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .taches_detail_projet,
+    .infos_detail_projet{
+        .titre_info_tache{
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1;
+        }
+        .barre{
+            height:1px;
+            width:100%;
+            background: var(--dark);
+            margin: 10px 0;
+        }
+    }
+}
+.detail_projet::-webkit-scrollbar {
+    width:0px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .detail_projet{
+        &_images{
+            .image{
+                width:100%;
+                &:first-child{
+                    margin: 0 25px 25px 25px;
+                }
+                &:last-child{
+                    margin: 0 25px 0 25px;
+                }
+            }
+        }
+        .taches_detail_projet{
+            width:100%;
+            margin: 0 25px 0 25px;
+            margin-bottom: 50px;
+        }
+        .infos_detail_projet{
+            width:100%;
+            margin: 0 25px 0 25px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .slide_projet{
+        width:100%;
+    }
+    .container_slide_projet{
+        .prev{
+            bottom:125px;
+        }
+        .next{
+            bottom:125px;
+        }
+    }
+    .detail_projet{
+        &_images{
+            .image{
+                width:45%;
+                &:first-child{
+                    margin: 0 25px 0 25px;
+                }
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+        .taches_detail_projet{
+            width:45%;
+            margin: 0 25px 0 25px;
+            margin-bottom: 50px;
+        }
+        .infos_detail_projet{
+            width:45%;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .detail_projet{
+        &_images{
+            .image{
+                width:100%;
+                &:first-child{
+                    margin: 0 25px 25px 25px;
+                }
+                &:last-child{
+                    margin: 0 25px 0 25px;
+                }
+            }
+        }
+        .taches_detail_projet{
+            width:100%;
+            margin: 0 25px 0 25px;
+            margin-bottom: 50px;
+        }
+        .infos_detail_projet{
+            width:100%;
+            margin: 0 25px 0 25px;
+        }
+    }
+}
