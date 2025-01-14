@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- License: MIT. Made by teenyicons: https://github.com/teenyicons/teenyicons -->
-<svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 4.21281L7.5 0.421143L1 4.21281V10.7872L7.5 14.5788L14 10.7872V4.21281Z" fill="#09489A"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256px" height="256px" viewBox="0 0 256 256" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(91.37255%,20.392157%,25.098041%);fill-opacity:1;" d="M 238.933594 71.898438 L 128 7.1875 L 17.066406 71.898438 L 17.066406 184.101562 L 128 248.8125 L 238.933594 184.101562 Z M 238.933594 71.898438 "/>
+</g>
 </svg>
